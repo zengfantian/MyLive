@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:orientation="vertical" >  
+  
+    <android.view.SurfaceView  
+        android:id="@+id/camera_preview"  
+        android:layout_width="fill_parent"  
+        android:layout_height="460dip"  
+        android:layout_alignParentTop="true"  
+        android:layout_centerInParent="true"  
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:id="@+id/open_picIcon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar_default" 
+        android:visibility="gone"
+        />
+    
+    <Button  
+        android:id="@+id/save_pic"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:text="拍照" />  
+  
+</LinearLayout>  

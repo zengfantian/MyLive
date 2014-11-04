@@ -1,0 +1,368 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.hoonsoft"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- SDK版本信息 -->
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="19" />
+
+    <!-- 测试用例 -->
+    <instrumentation 
+          android:name="android.test.InstrumentationTestRunner"
+		  android:targetPackage="cn.com.hoonsoft" 
+		  android:label="Tests for MyLive" />
+    
+    <!-- 读取网络状态权限 -->
+    <!-- 访问账户Gmail列表权限 -->
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+	<!-- 使用证书权限 -->
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" /> 
+	<!-- 管理账户权限 --> 
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+	<!-- 验证账户权限 --> 
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<!-- 连续广播权限 --> 
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+	<!-- 读写系统设置权限 --> 
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<!-- 这个权限用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<!-- 访问网络，网络定位需要上网-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!--允许应用读取低级别的系统日志文件 -->
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<!-- 在SDCard中创建与删除文件权限 -->  
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+	<!-- 读写手机状态和身份   -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<!-- 调用照相机相关权限   -->
+	<uses-permission android:name="android.permission.CAMERA" />  
+	<uses-feature android:name="android.hardware.camera" />  
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <!-- Push service 运行需要的权限 -->
+    <!-- 开机启动权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 振动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- 禁用键盘锁权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 更改系统设置的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/> 
+    <!-- 访问闪光灯的权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    
+    <!-- 发送短信验证码的权限 -->
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<!-- 统计SDK用的 -->
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	
+    <!-- 配置权限清单（结束） -->
+    
+    <application
+        android:name="cn.com.hoonsoft.tool.ToolApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <!-- 百度定位service -->
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"/>
+        
+        <!-- 在本应用中导入需要使用的包，放在application里面activity外面 --> 
+        <uses-library android:name="android.test.runner" />
+                
+        <!-- 配置程序启动界面 -->
+        <activity android:name="cn.com.hoonsoft.Launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 注册程序界面Activity -->
+        
+        <!-- Sample示例清单List界面 -->
+        <activity android:name="cn.com.hoonsoft.example.SampleListActivity" />
+        
+        <!-- 仿360UI（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.ui360.LoginActivity" />
+        <activity android:name="cn.com.hoonsoft.example.ui360.MainActivity" />
+        <!-- 仿360UI（结束） -->
+        
+        <!-- 自定义控件（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.progressbar.RoundPBActivity" />
+        <!-- 自定义控件（结束） -->
+         
+        <!-- 百度地图示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.gps.BaiduMapActivity" />
+        <!-- 百度地图示例（结束） --> 
+        
+        <!-- XML解析读写（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.xml.XMLRWActivity" />
+        <!-- XML解析读写（结束） -->    
+        
+        <!-- 文件下载（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.http.DownloadActivity" />
+        <!-- 文件下载（结束） -->  
+        
+        <!-- 手机拍照（开始） -->
+        <activity 
+            android:name="cn.com.hoonsoft.example.camera.CameraDemoActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+         />
+        <!-- 手机拍照（结束） -->  
+        
+        <!-- 一维码/二维码扫描（开始） -->
+         <activity
+            android:name="cn.com.hoonsoft.zxing.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 一维码/二维码扫描（结束） --> 
+        
+        <!-- 二维码么生成（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.zxing.ZxingGenBinActivity"/>
+        <!-- 二维码生成（结束） --> 
+        
+        <!-- 发送短信验证码（开始） -->
+        <activity
+            android:name="cn.com.hoonsoft.example.sms.SMSMainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.com.hoonsoft.example.sms.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 发送短信验证码（结束） --> 
+        
+        <!-- 内容分享（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.share.ShareSDKDemoActivity"/>
+        <!-- 内容分享（结束） --> 
+        
+        <!-- 图片合成（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.image.ImageComposActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.image.GalleryFlowActivity"/>
+        <!-- 图片合成（结束） --> 
+        
+        <!-- 自动获取表单数据（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.ui.AutoGainFormActivity"/>
+        <!-- 自动获取表单数据（结束） --> 
+        
+        <!-- 基于注解获取控件示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.ui.InjectViewActivity"/>
+        <!-- 基于注解获取控件示例（结束） --> 
+                
+        <!-- SOAP示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.soap.SOAPMainActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.soap.CityActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.soap.WeatherActivity"/>
+        <!-- SOAP示例（结束） --> 
+                        
+        <!-- 表单验证（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.ui.FormValidationActivity"/>
+        <!-- 表单验证（结束） -->
+        
+        <!-- 对话框示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.ui.DialogDemoActivity"/>
+        <!-- 对话框示例（结束） -->
+                
+        <!-- WebView示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.webview.MainActivity" android:label="MainActivity界面" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="cn.com.hoonsoft.example.webview.OtherActivity" android:label="OtherActivity界面" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="cn.com.hoonsoft.example.webview.WebActivity" android:label="WebActivity界面" android:theme="@android:style/Theme.Light"/>
+        <!-- WebView示例（结束） -->
+        
+        <!-- 无线级菜单示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.menu.tree.TreeActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.menu.TestExpandableListActivity"/>
+        <!-- 无线级菜单示例（结束） -->
+        
+        <!-- Listview示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.ui.RoundListviewActivity"/>
+        <!-- Listview示例（结束） -->
+        
+        <!-- StatusBar动态操作示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.statusbar.MainActivity"/>
+        <!-- StatusBar动态操作示例（结束） -->
+        
+        <!-- pulloRefresh示例（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.LauncherActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshExpandableListActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshGridActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshHorizontalScrollViewActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshListActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshListFragmentActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshListInViewPagerActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshScrollViewActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshViewPagerActivity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshWebView2Activity"/>
+        <activity android:name="cn.com.hoonsoft.example.pulltorefresh.PullToRefreshWebViewActivity"/>
+        <!-- pulloRefresh示例（结束） -->
+        
+        <!-- ShareSDK短信需要Activity --> 
+        <activity
+            android:name="cn.smssdk.SMSSDKUIShell"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- ShareSDK分享需要Activity --> 
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <!-- 
+            	AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+            <meta-data android:name="AuthorizeAdapter" android:value="cn.sharesdk.demo.MyAdapter" />
+            
+            <!-- 
+            	QZoneWebShareAdapter表示一个继承自cn.sharesdk.tencent.qzone.QZoneWebShareAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获QQ空间网页分享权页面的各种UI控件。 
+            	开发者可以通过继承QZoneWebShareAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+<!--             <meta-data android:name="QZoneWebShareAdapter" android:value="cn.sharesdk.demo.MyQZoneWebShareAdapter" /> -->
+            
+            <!--
+            	Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是
+            	“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权
+            -->
+            <intent-filter>
+                <data android:scheme="db-7janx53ilz11gbs" />
+        		<action android:name="android.intent.action.VIEW" />
+        		<category android:name="android.intent.category.BROWSABLE"/>
+        		<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+			<!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+                
+		<!--微信分享回调 -->
+		<activity
+		  android:name="cn.com.hoonsoft.sharesdk.wxapi.WXEntryActivity"
+		  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		  android:configChanges="keyboardHidden|orientation"
+		  android:exported="true"
+		  android:screenOrientation="portrait" />
+        
+        <!-- push富媒体，不使用富媒体推送不需要 -->
+        <activity
+            android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MediaViewActivity" >
+        </activity>
+        <activity
+            android:name="com.baidu.android.pushservice.richmedia.MediaListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MediaListActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- push富媒体结束 -->
+        
+        <!-- 百度消息推送信息显示界面（开始） -->
+        <activity android:name="cn.com.hoonsoft.example.message.PushDemoActivity" />
+        <activity android:name="cn.com.hoonsoft.example.message.CustomActivity" />
+        <!-- 百度消息推送信息显示界面（结束） --> 
+        
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="cn.com.hoonsoft.example.message.MyPushMessageReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- push service start -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <!-- Push服务接收客户端发送的各种请求 -->
+        <!-- 注意：RegistrationReceiver 在2.1.1及之前版本有拼写失误，为RegistratonReceiver ，用新版本SDK时请更改为如下代码 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Push 服务 -->
+        <!-- 注意：在4.0 (包含)之后的版本需加上如下所示的intent-filter action -->
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- push service end -->
+        
+
+        <!-- 统计用，service用于保证一定能够向服务器上传数据 -->
+        <service
+            android:name="cn.sharesdk.analysis.server.RemoteService"
+            android:process=":remote" />
+        
+        <!-- 添加 APPKEY 和 渠道号  -->
+        <meta-data android:name="SHARESDK_APPKEY" android:value="67f3258a518d9e074199124768bcc8e1"/>
+        <meta-data android:name="SHARESDK_CHANNEL" android:value="AnalysisSDK_Formal"/>
+        
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data android:name="api_key" android:value="lj3LPVN8sCiAtHbdk9Z3xndd" />
+        
+        <!-- 百度地图API密钥 (公司开发环境)-->
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="lj3LPVN8sCiAtHbdk9Z3xndd" />     
+        
+<!--         百度地图API密钥 (家里开发环境) -->
+<!--         <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="vHYuYjduXCm7LlnCKQC16U5a" />     -->
+
+</application>
+
+</manifest>

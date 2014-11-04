@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#00000000</color>
+    
+    <color name="item_n">#ffffff</color>
+    <color name="item_p">#fafafa</color>
+    <color name="table_header">#d7d7d7</color>
+    
+</resources>

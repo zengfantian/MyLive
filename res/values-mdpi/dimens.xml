@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="maill_order_product_item_logo_img_width">60.0dip</dimen>
+    <dimen name="maill_order_list_item_icon_img_width">50.0dip</dimen>
+    <dimen name="RemittanceAvatarSize">60.0dip</dimen>
+    <dimen name="RemittanceDetailTopMarginSize">42.0dip</dimen>
+    <dimen name="RemittanceDetailBottomMarginSize">12.0dip</dimen>
+    <dimen name="RemittanceDetailFeeTopMarginSize">4.0dip</dimen>
+</resources>

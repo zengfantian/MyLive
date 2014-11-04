@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/cn.com.hoonsoft"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="cn.com.hoonsoft.example.ui.AutoGainFormActivity" >
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar_bg_gray"
+        android:gravity="center"
+        android:text="@string/auto_gain_form_data"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- 账号 -->
+    <LinearLayout
+        android:id="@+id/ll_account"
+        style="@style/accountInputBorder"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_account"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/accountEditText"
+            android:hint="@string/et_account_hint"
+            android:tag="username" />
+    </LinearLayout>
+
+    <!-- 密码 -->
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        style="@style/accountInputBorder"
+        android:layout_below="@id/ll_account"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_password"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/accountEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/et_password_hint"
+            android:inputType="textPassword"
+            android:tag="password" />
+
+        <Button
+            android:id="@+id/btn_view_password"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_show"
+            android:text="@string/btn_show"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 毕业院校 -->
+
+    <LinearLayout
+        android:id="@+id/ll_school"
+        style="@style/accountInputBorder"
+        android:layout_below="@id/ll_password"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_school"
+            android:textColor="@color/grey" />
+
+        <cn.com.hoonsoft.view.SingleSpinner
+            android:id="@+id/sp_school"
+            android:tag="school" 
+            style="@style/accountEditText"
+            android:background="@drawable/drop_list"
+            />
+    </LinearLayout>
+
+    <!-- 性别 -->
+
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        style="@style/accountInputBorder"
+        android:layout_below="@id/ll_school"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rg_sex"
+            android:textColor="@color/grey" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <cn.com.hoonsoft.view.RadioButton
+                android:id="@+id/radioMale"
+                android:tag="sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:checked="true"
+                android:text="@string/sex_male"
+                android:textColor="@color/deep_gray" 
+                android_custom:value="male"
+                />
+
+            <cn.com.hoonsoft.view.RadioButton
+                android:id="@+id/radioFemale"
+                android:tag="sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:checked="false"
+                android:text="@string/sex_female"
+                android:textColor="@color/deep_gray" 
+                android_custom:value="female"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- 兴趣爱好 -->
+
+    <LinearLayout
+        android:id="@+id/ll_hoby"
+        style="@style/accountInputBorder"
+        android:layout_below="@id/ll_sex"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/tv_hoby"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_hoby"
+            android:textColor="@color/grey" />
+
+        <cn.com.hoonsoft.view.CheckBox
+            android:id="@+id/cb_sleep"
+            android_custom:value="sleep"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:tag="hoby"
+            android:text="@string/hoby_sleep"
+            android:textColor="@color/deep_gray" />
+
+        <cn.com.hoonsoft.view.CheckBox
+            android:id="@+id/cb_boll"
+            android_custom:value="boll"
+            android:tag="hoby"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:text="@string/hoby_boll"
+            android:textColor="@color/deep_gray" />
+
+        <cn.com.hoonsoft.view.CheckBox
+            android:id="@+id/cb_read"
+            android_custom:value="read"
+            android:tag="hoby"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:text="@string/hoby_read"
+            android:textColor="@color/deep_gray" />
+    </LinearLayout>
+
+    <!-- 账号 -->
+
+    <LinearLayout
+        android:id="@+id/ll_remark"
+        style="@style/accountInputBorder"
+        android:layout_below="@id/ll_hoby"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remark"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:tag="remark" 
+            style="@style/accountEditText"
+            android:lines="5"
+            android:hint="@string/hint_remark"
+            />
+    </LinearLayout>
+    
+    <!-- 提交表单 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_remark"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="13dp" >
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/accountButtonStyle"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/btn_quick_register"
+            android:text="@string/btn_auto_gaindata" />
+    </LinearLayout>
+
+</RelativeLayout>

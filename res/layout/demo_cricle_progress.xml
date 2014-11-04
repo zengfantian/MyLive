@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/cn.com.hoonsoft"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.com.hoonsoft.view.progressbar.RoundProgressBar
+        android:id="@+id/roundProgressBar4"
+        android_custom:style="FILL"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/roundProgressBar1"
+        android:layout_marginRight="32dp"
+        android_custom:roundProgressColor="#C2C2C2"
+        android_custom:roundWidth="1dip" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Button" />
+
+    <cn.com.hoonsoft.view.progressbar.RoundProgressBar
+        android:id="@+id/roundProgressBar1"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:max="100"
+        android:progress="40" />
+
+    <cn.com.hoonsoft.view.progressbar.RoundProgressBar
+        android:id="@+id/roundProgressBar5"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignRight="@+id/roundProgressBar4"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="56dp" />
+
+    <cn.com.hoonsoft.view.progressbar.RoundProgressBar
+        android:id="@+id/roundProgressBar3"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignLeft="@+id/roundProgressBar4"
+        android:layout_below="@+id/roundProgressBar5"
+        android:layout_marginTop="29dp"
+        android_custom:roundColor="#C6E2FF"
+        android_custom:roundProgressColor="#CD3333"
+        android_custom:roundWidth="10dip"
+        android_custom:textIsDisplayable="false" />
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/roundProgressBar3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/custom_progress_bar" />
+
+</RelativeLayout>

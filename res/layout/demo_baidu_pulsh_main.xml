@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/logtip_fra"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        >
+        <TextView
+	        android:id="@+id/text_log_tip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20dip" 
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/log_tip" 
+	        android:textSize="15sp"/>
+		
+	    <Button
+	        android:id="@+id/btn_clear_log"
+	        android:layout_width="wrap_content"
+	        android:layout_height="33dip"
+	        android:paddingTop="3dip"
+	        android:paddingBottom="3dip"
+	        android:gravity="center"
+	        android:layout_marginRight="15dip"
+	        android:text="@string/clear_log"
+	        android:textSize="15sp" />
+    </LinearLayout>
+	<ScrollView
+	    android:id="@+id/stroll_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:layout_marginBottom="5dip"
+		android:background="#707070"
+	    android:layout_weight="1" >"
+		    <TextView
+		        android:id="@+id/text_log"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		   		android:paddingLeft="3dip" />
+    </ScrollView>
+    <LinearLayout 
+        android:id="@+id/firstBtnLine"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/btn_setTags"
+	        android:layout_width="140dip"
+        	android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:text="@string/text_btn_setTags" />
+	
+	    <Button
+	        android:id="@+id/btn_delTags"
+	        android:layout_width="140dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:text="@string/text_btn_delTags" />
+	</LinearLayout>
+	<LinearLayout 
+        android:id="@+id/secondBtnLine"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/btn_rich"
+	        android:layout_width="140dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:text="@string/text_btn_rich" />
+	    <Button
+	        android:id="@+id/btn_initAK"
+	        android:layout_width="140dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:text="@string/text_btn_initAK" />
+    </LinearLayout>
+                     	    
+	    <Button
+	        android:id="@+id/btn_init"
+	        android:layout_width="140dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:text="@string/text_btn_init" />  
+
+</LinearLayout>

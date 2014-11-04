@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ffffffff">
+	<include layout="@layout/toolbar_bottom"></include>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_above="@+id/toolBar">
+		<ListView android:id="@+id/code_list" android:background="#ffffffff"
+			android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:drawSelectorOnTop="false"
+			android:cacheColorHint="#ffffffff" android:divider="@drawable/divider_list"
+			android:dividerHeight="2.0dip" android:layout_weight="0.0"
+			android:fastScrollEnabled="true" android:scrollbars="none"
+			/>
+
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar_bg" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/logo_yunpan_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_logo"
+            android:text="@string/tv_my_cloud"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/ibtn_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_right_menu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_index_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:background="@drawable/title_menu_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/tv_find"
+            style="@style/menuTitle"
+            android:background="@drawable/title_menu_current"
+            android:text="@string/tv_find"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_my_file"
+            style="@style/menuTitle"
+            android:background="@drawable/title_menu_bg"
+            android:text="@string/tv_my_file"
+            android:textColor="@color/grey" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_index_bar" />
+
+</RelativeLayout>

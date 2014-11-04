@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg_gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/operationBtn" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/menu_upload"
+                android:text="@string/btn_upload"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bottom_menu_line" />
+
+        <LinearLayout style="@style/operationBtn" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/menu_share"
+                android:text="@string/btn_share"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bottom_menu_line" />
+
+        <LinearLayout style="@style/operationBtn" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/menu_download"
+                android:text="@string/btn_download"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bottom_menu_line" />
+
+        <LinearLayout style="@style/operationBtn" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/menu_more"
+                android:text="@string/btn_more"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_files"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/ll_bottom"
+        android:layout_alignParentTop="true"
+        android:divider="@color/light_gray"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</RelativeLayout>

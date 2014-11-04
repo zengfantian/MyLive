@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/demo_container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="8dp"
+	android:clickable="false"
+	android:orientation="vertical"
+	>
+    
+    <EditText
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/row_height"
+		android:id="@+id/demo_name"
+		android:hint="@string/demo_name"
+		android:singleLine="true"
+		/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/demo_number_of_participants"
+		android:id="@+id/textView1"
+		 />
+
+	<EditText
+		android:layout_width="@dimen/form_width"
+		android:layout_height="@dimen/row_height"
+		android:id="@+id/demo_participants"
+		android:layout_gravity="right"
+		android:singleLine="true"
+		android:hint="@string/demo_participants_hint"
+		android:inputType="number" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/row_height"
+		android:text="@string/demo_date"
+		android:id="@+id/textView2"
+		
+		/>
+
+	<TextView
+		android:layout_width="@dimen/form_width"
+		android:layout_height="@dimen/row_height"
+		android:text="@string/demo_pick_date"
+		android:id="@+id/demo_date"
+		android:layout_gravity="right"
+		android:singleLine="true"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:gravity="left|center_vertical" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/demo_type"
+		android:id="@+id/textView3"
+		/>
+
+	<Spinner
+		android:layout_width="@dimen/form_width"
+		android:layout_height="@dimen/row_height"
+		android:id="@+id/demo_spinner"
+		android:layout_gravity="right"
+		/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/demo_email"
+		android:id="@+id/textView4"
+		/>
+
+	<EditText
+		android:id="@+id/demo_email"
+		android:layout_width="@dimen/form_width"
+		android:layout_height="@dimen/row_height"
+		android:hint="@string/demo_email_hint"
+		android:singleLine="true"
+		android:layout_gravity="right"
+		android:inputType="textEmailAddress" />
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@android:string/ok"
+		android:id="@+id/demo_ok"
+		android:layout_gravity="bottom" />
+
+</LinearLayout>

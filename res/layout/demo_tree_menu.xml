@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnNormal"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:text="两层结构" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnSuper"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:text="三层结构" >
+        </Button>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/ExpandableListView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ExpandableListView>
+
+</LinearLayout>

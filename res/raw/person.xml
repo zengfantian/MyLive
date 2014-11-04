@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+  <fax>
+    <number>9999-999</number>
+    <code>123</code>
+  </fax>
+  <firstName>Joe</firstName>
+  <lastName>Walnes</lastName>
+  <phonex>
+    <number>1234-456</number>
+    <code>123</code>
+  </phonex>
+</person>

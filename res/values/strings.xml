@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyLive</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_to_cloud">登录360云盘</string>
+    <string name="tv_account">帐号：</string>
+    <string name="tv_password">密码：</string>
+    <string name="tv_forget_password">忘记密码</string>
+    <string name="tv_my_cloud">我的云盘</string>
+    <string name="tv_find">发现·浏览</string>
+    <string name="tv_my_file">我的文件</string>
+    <string name="tv_menu_title">海量手机资源</string>
+    <string name="tv_menu_msg">电子书 音乐 壁纸 铃声</string>
+    <string name="tv_file_name">遇见未知的自己.txt</string>
+    <string name="tv_file_msg">188.3M  修改时间:2012–11–23</string>
+    <string name="tv_file_op_delete">删除</string>
+    <string name="tv_file_op_download">下载</string>
+    <string name="tv_file_op_share">分享</string>
+    <string name="tv_file_op_more">更多</string>
+    <string name="tv_menu_account">475500230@qq.com</string>
+    <string name="tv_menu_space">219M / 7.4G</string>
+    <string name="tv_menu_auto_backup">自动备份照片</string>
+    <string name="tv_menu_transfer">传输管理</string>
+    <string name="tv_menu_history">查看最近操作</string>
+    <string name="tv_menu_connect">发送文件到电脑</string>
+    <string name="tv_menu_reward">免费抽空间</string>
+    <string name="tv_menu_setting">设置</string>
+    <string name="tv_menu_logout">退出登录</string>
+    <string name="btn_upload">上传</string>
+    <string name="btn_download">下载</string>
+    <string name="btn_more">更多</string>
+    <string name="btn_share">分享</string>
+    <string name="btn_show">显示</string>
+    <string name="btn_add_accounts">快速注册</string>
+    <string name="btn_quick_register">立即登录</string>
+    <string name="et_account_hint">请输入您的手机号\邮箱\用户名</string>
+    <string name="et_password_hint">请输入密码</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="menu_settings">Settings</string>
+    
+    <string name="tab_home">"首页"</string>
+    <string name="tab_search">"搜索"</string>
+    <string name="tab_settings">"设置"</string>
+    
+    <string name="title_home">"首页"</string>
+    <string name="title_search">"搜索"</string>
+    <string name="title_settings">"设置"</string>
+    
+    <string name="back">"返回"</string>
+    <string name="help">"帮助"</string>
+    <string name="exit">"退出"</string>
+
+    <string name="fragment_home_text">"这是首页"</string>
+    <string name="fragment_search_text">"这是搜索"</string>
+    <string name="fragment_settings_text">"这是设置"</string>
+    
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="get_more">获取更多</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="updating">最近更新：</string>
+    
+	<!-- 百度云推送 （开始）-->
+    <string name="login">登录</string>
+    <string name="text_btn_init">百度账号绑定</string>
+    <string name="text_btn_init1">更换百度账号</string>
+    <string name="log_tip">日志：</string>
+    <string name="clear_log">清除日志</string>
+    <string name="text_btn_rich">富媒体消息</string>
+    <string name="text_btn_initAK">无账号绑定</string>
+    <string name="text_btn_setTags">设置标签</string>
+    <string name="text_btn_delTags">删除标签</string>
+    <string name="text_btn_senior">高级功能</string>
+    <string name="text_btn_set">设置</string>
+    <string name="text_media_title">富媒体消息列表</string>
+    <string name="media">Rich Media</string>
+    <string name="custom_text_hint">用户自定义行为打开的Activity</string>
+    <string name="tags_hint">请输入多个标签，以英文逗号隔开</string>
+    <!-- 百度云推送 （结束）-->
+    
+    <!-- 二维码 （开始）-->
+    <string name="placeHolder">placeHolder</string>
+    <string name="seekbar_add">+</string>
+    <string name="seekbar_minus">-</string>
+    <string name="create">生成</string>
+    <string name="scan_failed">扫描失败</string>
+    <string name="bottom_hint">建议与镜头保持10CM距离，尽量避免逆光和阴影</string>
+    <string name="top_hint">将条形码或二维码置于取景框内系统会自动扫描</string>
+    <string name="cancel">取消</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="button_ok">确定</string>  
+    <!-- 二维码 （结束）--> 
+     
+<!--     短信验证码 （开始） -->
+    <string name="smssdk_bind_mobile_show">注册或绑定手机演示</string>
+    <string name="smssdk_contact">通讯录好友</string>
+    <string name="smssdk_appkey_dialog_title">请输入您的应用信息</string>
+    <string name="smssdk_appkey">AppKey</string>
+    <string name="smssdk_appkey_hint">请输入您的AppKey</string>
+    <string name="smssdk_appsecret">AppSecret</string>
+    <string name="smssdk_appsecrethint">请输入您的AppSecret</string>
+<!--      短信验证码  （结束）  -->
+
+<!-- 自动获取表单DEMO -->
+<string name="btn_auto_gaindata">提交表单</string>
+<string name="tv_school">毕业院校：</string>
+<string name="rg_sex">性别：</string>
+<string name="sex_male">男</string>
+<string name="sex_female">女</string>
+<string name="tv_hoby">兴趣爱好：</string>
+<string name="hoby_sleep">睡觉</string>
+<string name="hoby_boll">打球</string>
+<string name="hoby_read">看小说</string>
+<string name="remark">备注</string>
+<string name="hint_remark">请输入备注内容</string>
+<string name="auto_gain_form_data">自动获取表单示例</string>
+
+	<string name="validation_name">Please, enter the name</string>
+    <string name="validation_name_length">Please, enter the name with at least 3 characters</string>
+    <string name="validation_participants">Please, enter the number of participants</string>
+    <string name="validation_valid_email">Please, enter valid email address</string>
+    <string name="validation_date">Date must be in future</string>
+    <string name="validation_type">Please, select type</string>
+    <string name="validation_success">Validation succeeded! \nThat was easy, wasn\'t it?</string>
+    <string name="demo_menu_live_validation_enable">Enable live validation</string>
+    <string name="demo_menu_live_validation_disable">Disable live validation</string>
+    <string name="demo_email_hint">E-mail address</string>
+    <string name="demo_email">Email</string>
+    <string name="demo_type">Type</string>
+    <string name="demo_pick_date">Pick Date</string>
+    <string name="demo_date">Date</string>
+    <string name="demo_participants_hint"># of participants</string>
+    <string name="demo_number_of_participants">Participants</string>
+    <string name="demo_name">Name</string>
+    
+    <string name="number">00</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="pause">pause</string>
+    <string name="resume">resume</string>
+    <string name="sms_timer">获取手机验证码（%1$s）</string>
+    
+    <string name="filler_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mauris varius lacus porttitor eget blandit massa facilisis. Nulla pellentesque odio sed purus fermentum vitae viverra orci faucibus. Sed ullamcorper condimentum vulputate. Curabitur sit amet convallis velit. Vestibulum posuere eleifend risus ac adipiscing. Nam pulvinar nulla a velit faucibus imperdiet. Praesent eget nisi ac justo blandit sagittis. Maecenas at leo nisi, nec varius nisl.\nIn hac habitasse platea dictumst. Morbi neque tortor, vestibulum sed viverra a, luctus vel lorem. Nunc turpis eros, varius eget commodo et, euismod at eros. Sed tincidunt mi purus, vel posuere dui. Vestibulum ante lectus, porta sed mattis bibendum, scelerisque cursus sapien. Cras ultrices imperdiet fermentum. Aenean nisi nulla, euismod non blandit ac, dictum quis libero. Morbi consectetur tempor mollis. Suspendisse eget nunc arcu, vel ullamcorper augue. Integer malesuada, diam nec faucibus mollis, nisl velit euismod enim, ac mattis justo neque sit amet mauris. Vivamus pretium imperdiet pharetra.\nInteger sagittis augue sit amet lectus pulvinar sit amet commodo tortor mattis. Maecenas quis tellus eget ante eleifend sollicitudin non et nibh. Maecenas luctus euismod tristique. Fusce in odio nec diam blandit facilisis. Sed nec arcu eros. Vivamus quis tortor a metus tempus aliquam eget volutpat magna. Pellentesque id ultrices dolor. Sed blandit aliquet quam. Phasellus dapibus euismod vulputate. Aenean blandit, elit vitae vestibulum tincidunt, metus dui accumsan nulla, sit amet vehicula mauris lacus in est. Etiam dignissim pellentesque nulla vel malesuada. Cras vel lorem justo.\nSed condimentum nisl sit amet libero vestibulum hendrerit. Duis auctor tempus placerat. Proin velit ante, ornare nec dictum nec, hendrerit eu arcu. Etiam ut diam ornare quam venenatis pulvinar vitae vel leo. Vivamus consectetur, ante id interdum rhoncus, magna eros pulvinar lacus, a gravida nibh arcu vitae eros. Nulla scelerisque laoreet feugiat. Mauris sit amet gravida felis.\nNulla ac dolor sapien, vestibulum venenatis justo. Cras placerat velit vitae nibh pellentesque ultricies. Suspendisse adipiscing enim eu justo iaculis eu pretium urna fermentum. Duis porttitor nunc non nunc mattis vestibulum. Etiam elit tellus, feugiat in bibendum eget, adipiscing nec metus. Ut ut sem lacus, quis faucibus diam. Curabitur a nulla fermentum tortor dignissim posuere. Fusce faucibus ante ut sem imperdiet imperdiet eget vitae lorem. Etiam fringilla ornare ipsum, in sagittis quam ornare vitae. Nullam venenatis orci sit amet sapien adipiscing gravida. Proin turpis lectus, hendrerit vitae vehicula ut, auctor ac lectus. Pellentesque sollicitudin blandit ligula quis commodo. Mauris vulputate lectus in velit luctus aliquam. Quisque eget tincidunt elit. Quisque et augue quam, sed scelerisque eros.</string>
+    
+    <string name="s1">SYSTEM_UI_FLAG_VISIBLE</string>
+    <string name="s2">INVISIBLE</string>
+    <string name="s3">SYSTEM_UI_FLAG_FULLSCREEN</string>
+    <string name="s4">SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</string>
+    <string name="s5">SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION</string>
+    <string name="s6">SYSTEM_UI_LAYOUT_FLAGS</string>
+    <string name="s7">SYSTEM_UI_FLAG_HIDE_NAVIGATION</string>
+    <string name="s8">SYSTEM_UI_FLAG_LOW_PROFILE</string>
+    
+</resources>

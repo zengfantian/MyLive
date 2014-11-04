@@ -1,0 +1,149 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize and preverify steps (and performs some
+# of these optimizations on its own).
+-dontoptimize
+-dontpreverify
+# Note that if you want to enable optimization, you cannot just
+# include optimization flags in your own project configuration file;
+# instead you will need to point to the
+# "proguard-android-optimize.txt" file instead of this one from your
+# project.properties file.
+
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+-dontwarn android.support.**
+
+#导入第三方jar
+-dontskipnonpubliclibraryclassmembers
+-injars      bin/classes
+-injars      libs
+-outjars     bin/classes-processed.jar
+
+#忽略对应包下的类（第三方jar或者已经混淆加密过的jar）
+
+#SOAP访问第三方jar ksoap2-android.jar https://github.com/mosabua/ksoap2-android
+-dontwarn org.kobjects.**
+-keep class org.kobjects.** {*;}
+
+-dontwarn org.ksoap2.**
+-keep class org.ksoap2.** {*;}
+
+-dontwarn org.kxml2.**
+-keep class org.kxml2.** {*;}
+
+-dontwarn org.xmlpull.**
+-keep class org.xmlpull.** {*;}
+
+
+#表单验证插件 android-validation-komensky0.9.3.jar https://github.com/inmite/android-validation-komensky
+-dontwarn eu.inmite.android.lib.**
+-keep class eu.inmite.android.lib.** {*;}
+
+#ShareSdk短信发送jar http://mob.com/
+-dontwarn m.framework.**
+-keep class m.framework.** {*;}
+
+-dontwarn cn.sharesdk.**
+-keep class cn.sharesdk.** {*;}
+
+#谷歌  RoboGuice2框架 https://github.com/roboguice/roboguice
+-dontwarn com.google.inject.**
+-keep class com.google.inject.** {*;}
+
+-dontwarn roboguice.**
+-keep class roboguice.** {*;}
+
+-dontwarn javax.annotation.**
+-keep class javax.annotation.** {*;}
+
+-dontwarn javax.inject.**
+-keep class javax.inject.** {*;}
+
+#谷歌zxing二维码jar https://github.com/zxing/zxing/
+-dontwarn com.google.zxing.**
+-keep class com.google.zxing.** {*;}
+
+#滑动菜单jar https://github.com/jfeinstein10/SlidingMenu
+-dontwarn com.jeremyfeinstein.slidingmenu.lib.**
+-keep class com.jeremyfeinstein.slidingmenu.lib.** {*;}
+
+#百度地图、定位相关jar
+-dontwarn com.baidu.**
+-keep class com.baidu.** {*;}
+
+#XStream操作xml与Bean之间转换jar
+-dontwarn com.thoughtworks.xstream.**
+-keep class com.thoughtworks.xstream.** {*;}
+
+#ormlite数据库ORM操作jar  http://ormlite.com/
+-dontwarn com.j256.ormlite.**
+-keep class com.j256.ormlite.** {*;}
+
+#图片异步加载universal-image-loader-1.8.4.jar  https://github.com/dodola/Android-Universal-Image-Loader
+-dontwarn com.nostra13.universalimageloader.**
+-keep class com.nostra13.universalimageloader.** {*;}
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/et_qr_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_gravity="left"
+        >
+    </EditText>
+	
+    <Button
+        android:id="@+id/btn_make_qr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码" 
+        android:layout_gravity="right"
+        />
+     <Button
+        android:id="@+id/btn_make_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="获取随机验证码" 
+        android:layout_gravity="right"
+        />
+	    
+    <ImageView
+        android:id="@+id/qr_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:minWidth="200dp"
+    />
+
+</LinearLayout>

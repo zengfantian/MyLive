@@ -1,0 +1,253 @@
+# view res/layout/activity_ptr_list_in_vp.xml #generated:9
+# view res/layout/demo_ui360_activity_main.xml #generated:64
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:10
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view res/layout/demo_camera_main.xml #generated:7
+-keep class android.view.SurfaceView { <init>(...); }
+
+# view res/layout/demo_bplush_notification_custom_builder.xml #generated:48
+-keep class android.widget.DateTimeView { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class cn.com.hoonsoft.Launcher { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class cn.com.hoonsoft.example.SampleListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class cn.com.hoonsoft.example.camera.CameraDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class cn.com.hoonsoft.example.gps.BaiduMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class cn.com.hoonsoft.example.http.DownloadActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:161
+-keep class cn.com.hoonsoft.example.image.GalleryFlowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class cn.com.hoonsoft.example.image.ImageComposActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:194
+-keep class cn.com.hoonsoft.example.menu.TestExpandableListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:193
+-keep class cn.com.hoonsoft.example.menu.tree.TreeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class cn.com.hoonsoft.example.message.CustomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:298
+-keep class cn.com.hoonsoft.example.message.MyPushMessageReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:293
+-keep class cn.com.hoonsoft.example.message.PushDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class cn.com.hoonsoft.example.progressbar.RoundPBActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class cn.com.hoonsoft.example.pulltorefresh.LauncherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshExpandableListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshGridActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshHorizontalScrollViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:210
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshListFragmentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshListInViewPagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:213
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshScrollViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshViewPagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshWebView2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class cn.com.hoonsoft.example.pulltorefresh.PullToRefreshWebViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class cn.com.hoonsoft.example.share.ShareSDKDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class cn.com.hoonsoft.example.sms.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class cn.com.hoonsoft.example.sms.SMSMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class cn.com.hoonsoft.example.soap.CityActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:173
+-keep class cn.com.hoonsoft.example.soap.SOAPMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class cn.com.hoonsoft.example.soap.WeatherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class cn.com.hoonsoft.example.statusbar.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:165
+-keep class cn.com.hoonsoft.example.ui.AutoGainFormActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class cn.com.hoonsoft.example.ui.DialogDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class cn.com.hoonsoft.example.ui.FormValidationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class cn.com.hoonsoft.example.ui.InjectViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class cn.com.hoonsoft.example.ui.RoundListviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class cn.com.hoonsoft.example.ui360.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class cn.com.hoonsoft.example.ui360.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:187
+-keep class cn.com.hoonsoft.example.webview.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class cn.com.hoonsoft.example.webview.OtherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:189
+-keep class cn.com.hoonsoft.example.webview.WebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class cn.com.hoonsoft.example.xml.XMLRWActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class cn.com.hoonsoft.example.zxing.ZxingGenBinActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:271
+-keep class cn.com.hoonsoft.sharesdk.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class cn.com.hoonsoft.tool.ToolApplication { <init>(...); }
+
+# view res/layout/demo_from_data.xml #generated:164
+# view res/layout/demo_from_data.xml #generated:175
+# view res/layout/demo_from_data.xml #generated:186
+-keep class cn.com.hoonsoft.view.CheckBox { <init>(...); }
+
+# view res/layout/demo_round_listview.xml #generated:9
+-keep class cn.com.hoonsoft.view.CornerListView { <init>(...); }
+
+# view res/layout/demo_layout_gallery.xml #generated:9
+-keep class cn.com.hoonsoft.view.GalleryFlow { <init>(...); }
+
+# view res/layout/demo_from_data.xml #generated:123
+# view res/layout/demo_from_data.xml #generated:135
+-keep class cn.com.hoonsoft.view.RadioButton { <init>(...); }
+
+# view res/layout/demo_from_data.xml #generated:93
+-keep class cn.com.hoonsoft.view.SingleSpinner { <init>(...); }
+
+# view res/layout/demo_cricle_progress.xml #generated:27
+# view res/layout/demo_cricle_progress.xml #generated:47
+# view res/layout/demo_cricle_progress.xml #generated:55
+# view res/layout/demo_cricle_progress.xml #generated:7
+# view res/layout/demo_download_progress.xml #generated:72
+# view res/layout/demo_upload_progress.xml #generated:72
+-keep class cn.com.hoonsoft.view.progressbar.RoundProgressBar { <init>(...); }
+
+# view res/layout/activity_ptr_expandable_list.xml #generated:9
+-keep class cn.com.hoonsoft.view.pulltorefresh.PullToRefreshExpandableListView { <init>(...); }
+
+# view res/layout/activity_ptr_grid.xml #generated:8
+-keep class cn.com.hoonsoft.view.pulltorefresh.PullToRefreshGridView { <init>(...); }
+
+# view res/layout/activity_ptr_horizontalscrollview.xml #generated:9
+-keep class cn.com.hoonsoft.view.pulltorefresh.PullToRefreshHorizontalScrollView { <init>(...); }
+
+# view res/layout/activity_ptr_list.xml #generated:9
+# view res/layout/layout_listview_in_viewpager.xml #generated:2
+-keep class cn.com.hoonsoft.view.pulltorefresh.PullToRefreshListView { <init>(...); }
+
+# view res/layout/activity_ptr_scrollview.xml #generated:9
+-keep class cn.com.hoonsoft.view.pulltorefresh.PullToRefreshScrollView { <init>(...); }
+
+# view res/layout/activity_ptr_webview.xml #generated:9
+-keep class cn.com.hoonsoft.view.pulltorefresh.PullToRefreshWebView { <init>(...); }
+
+# view res/layout/activity_ptr_webview2.xml #generated:9
+-keep class cn.com.hoonsoft.view.pulltorefresh.extras.PullToRefreshWebView2 { <init>(...); }
+
+# view res/layout/activity_ptr_list_fragment.xml #generated:6
+-keep class cn.com.hoonsoft.view.pulltorefresh.extras.listfragment.PullToRefreshListFragment { <init>(...); }
+
+# view res/layout/activity_ptr_viewpager.xml #generated:8
+-keep class cn.com.hoonsoft.view.pulltorefresh.extras.viewpager.PullToRefreshViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:131
+-keep class cn.com.hoonsoft.zxing.CaptureActivity { <init>(...); }
+
+# view res/layout/demo_zxing_scanner.xml #generated:13
+-keep class cn.com.hoonsoft.zxing.view.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:349
+-keep class cn.sharesdk.analysis.server.RemoteService { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class cn.sharesdk.framework.ShareSDKUIShell { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class cn.smssdk.SMSSDKUIShell { <init>(...); }
+
+# view res/layout/smssdk_contact_list_page.xml #generated:13
+-keep class cn.smssdk.gui.ContactsListView { <init>(...); }
+
+# view res/layout/smssdk_country_list_page.xml #generated:13
+-keep class cn.smssdk.gui.CountryListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:337
+-keep class com.baidu.android.pushservice.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:310
+-keep class com.baidu.android.pushservice.PushServiceReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:322
+-keep class com.baidu.android.pushservice.RegistrationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:284
+-keep class com.baidu.android.pushservice.richmedia.MediaListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:279
+-keep class com.baidu.android.pushservice.richmedia.MediaViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/demo_baidu_map.xml #generated:9
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view res/layout/view_sliding_menu_main.xml #generated:2
+-keep class com.jeremyfeinstein.slidingmenu.lib.SlidingMenu { <init>(...); }
+
+# view res/layout/smssdk_contacts_listview_item.xml #generated:10
+-keep class m.framework.ui.widget.asyncview.AsyncImageView { <init>(...); }
+
+# view res/layout/xlistview_main.xml #generated:12
+-keep class me.maxwin.view.XListView { <init>(...); }
+

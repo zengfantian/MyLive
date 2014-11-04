@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray" >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/logo_yunpan" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/iv_logo"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_user_bg"
+                android:orientation="horizontal"
+                android:padding="20dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/avatar_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:text="@string/tv_menu_account"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:max="100"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/custom_progress_bar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:text="@string/tv_menu_space"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_backup"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_backup"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_backup"
+                    android:text="@string/tv_menu_auto_backup" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_transfer"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_transfer"
+                	android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_transfer"
+                    android:text="@string/tv_menu_transfer" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_history"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_history" 
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_history"
+                    android:text="@string/tv_menu_history" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_connect"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_connect" 
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_connect"
+                    android:text="@string/tv_menu_connect" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_reward"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_reward" 
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_reward"
+                    android:text="@string/tv_menu_reward" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_setting" 
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_setting"
+                    android:text="@string/tv_menu_setting" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_logout" 
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_logout"
+                    android:text="@string/tv_menu_logout" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
